@@ -7,3 +7,15 @@ img {
 ul{
     list-style-type: none;
 }
+
+#summary {
+    display: none;
+}
+
+#practical{
+    display: none;
+}
+
+#contact{
+    display: none;
+}
