@@ -74,6 +74,16 @@ li:hover{
     cursor: pointer;
 }
 
+nav li:hover{
+    color: yellow;
+}
+
+section{
+    margin: 0;
+}
+
+
+
 #summary {
     display: block;
     background: lightblue;
