@@ -47,24 +47,15 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 a{
     text-decoration: none;
 
 }
 
-nav>ul{
+nav > ul{
     list-style-type: none;
     background-color: skyblue;
+    margin: 0;
 }
 
 nav li{
