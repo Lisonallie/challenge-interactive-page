@@ -2,20 +2,36 @@ img {
     width: 1000px;
     height: 300px;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 
 ul{
     list-style-type: none;
+    background-color: skyblue;
+
+
+}
+
+li{
+    display: inline-block;
+    background-color: darkblue;
+    width: 30%;
+
 }
 
 #summary {
     display: none;
+    background: orangered;
 }
 
 #practical{
     display: none;
+    background-color: yellow;
 }
 
 #contact{
     display: none;
+    background-color: blue;
 }
