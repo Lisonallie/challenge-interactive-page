@@ -17,6 +17,12 @@ let purpleSky = document.getElementById("purpleSky");
 let galaxySky = document.getElementById("galaxySky");
 let blueSky = document.getElementById("blueSky");
 
+// get all images together
+let slides = document.getElementsByClassName("meteor");
+
+// declare slide index
+let slideIndex = 1;
+
 // set original display properties of targeted elements
 window.onload = function () {
     summary.style.display = "block";
@@ -67,9 +73,15 @@ previous.addEventListener("click", goBack);
 next.addEventListener("click", goForward);
 
 function goBack() {
-
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
 }
 
 function goForward() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
 }
