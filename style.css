@@ -117,10 +117,35 @@ label{
     margin: 11px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
     opacity: 0.9;
+    display: inline-block;
+    border-radius: 20px;
 }
 
 #button:hover{
     opacity:1;
+}
+
+
+
+
+/*CSS for Footer*/
+footer > section{
+    float: left;
+    background-color: lightgray;
+    margin-right: 30px;
+
+}
+
+footer span{
+    font-size: 10rem;
+}
+
+
+#nrMeteors{
+
+}
+
+#nrAttendees{
+
 }
