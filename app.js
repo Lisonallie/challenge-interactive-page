@@ -23,9 +23,17 @@ let slides = document.getElementsByClassName("meteor");
 // declare slide index
 let slideIndex = 1;
 
+// variables for form
+let firstName = document.getElementById("fname");
+let lastName = document.getElementById("lname");
+let email = document.getElementById("email");
+let country = document.getElementById("country");
+let textbox = document.getElementById("subject");
+let submit = document.getElementById("button");
+
 // set original display properties of targeted elements
 window.onload = function () {
-    summary.style.display = "block";
+    summary.style.display = "none";
     practical.style.display = "none";
     contact.style.display = "none";
     purpleSky.style.display = "block";
@@ -38,12 +46,12 @@ tab3.addEventListener("click", showTab3);
 
 // show and hide each tab based on which one is visible, and allow it to become visible again and change conditions according to which tab is still visible.
 function showTab1() {
-    if (summary.style.display == "block") {
-        summary.style.display = "none";
-    } else if (summary.style.display == "none") {
+    if (summary.style.display == "none") {
         summary.style.display = "block";
         practical.style.display = "none";
         contact.style.display = "none";
+    } else if (summary.style.display == "block") {
+        summary.style.display = "none";
     }
 }
 
@@ -94,4 +102,11 @@ function goForward() {
     if (slideIndex == 3) {
         slideIndex = 0;
     }
+}
+
+// disable send button if all fields are not filled in
+if (firstName.value.length > 0 && lastName.value.length > 0 && email.value.length > 0 && textbox.value.length > 0) {
+    submit.style.cssText = "background-color: #663367;";
+} else {
+    submit.style.cssText = "background-color: #AEA5AE;";
 }
