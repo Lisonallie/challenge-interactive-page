@@ -8,6 +8,15 @@ let summary = document.getElementById("summary");
 let practical = document.getElementById("practical");
 let contact = document.getElementById("contact");
 
+// previous and next buttons for slider
+let previous = document.querySelector(".slideshow > .prev");
+let next = document.querySelector(".slideshow > .next");
+
+// get each image separately
+let purpleSky = document.getElementById("purpleSky");
+let galaxySky = document.getElementById("galaxySky");
+let blueSky = document.getElementById("blueSky");
+
 // set original display properties of targeted elements
 window.onload = function () {
     summary.style.display = "block";
