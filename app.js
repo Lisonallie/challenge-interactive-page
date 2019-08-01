@@ -22,6 +22,7 @@ window.onload = function () {
     summary.style.display = "block";
     practical.style.display = "none";
     contact.style.display = "none";
+    purpleSky.style.display = "block";
 }
 
 // click events for each tab
@@ -58,4 +59,17 @@ function showTab3() {
     } else if (contact.style.display == "block") {
         contact.style.display = "none";
     }
+}
+
+
+// slider composition
+previous.addEventListener("click", goBack);
+next.addEventListener("click", goForward);
+
+function goBack() {
+
+}
+
+function goForward() {
+
 }
