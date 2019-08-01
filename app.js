@@ -30,6 +30,7 @@ let email = document.getElementById("email");
 let country = document.getElementById("country");
 let textbox = document.getElementById("subject");
 let submit = document.getElementById("button");
+let formItems = document.querySelectorAll("#fname, #lname, #email, #subject");
 
 // set original display properties of targeted elements
 window.onload = function () {
@@ -37,6 +38,7 @@ window.onload = function () {
     practical.style.display = "none";
     contact.style.display = "none";
     purpleSky.style.display = "block";
+    submit.disabled == true;
 }
 
 // click events for each tab
@@ -105,8 +107,13 @@ function goForward() {
 }
 
 // disable send button if all fields are not filled in
-if (firstName.value.length > 0 && lastName.value.length > 0 && email.value.length > 0 && textbox.value.length > 0) {
-    submit.style.cssText = "background-color: #663367;";
-} else {
-    submit.style.cssText = "background-color: #AEA5AE;";
+
+for (let i = 0; i < formItems.length; i++) {
+    formItems[i].addEventListener("input", function() {
+        let values = [];
+        formItems.forEach(v => values.push(v.value))
+        submit.disabled = values.includes('');
+    });
+    submit.disabled == false;
 }
+
