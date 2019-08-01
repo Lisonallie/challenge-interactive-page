@@ -32,6 +32,10 @@ let textbox = document.getElementById("subject");
 let submit = document.getElementById("button");
 let formItems = document.querySelectorAll("#fname, #lname, #email, #subject");
 
+// get number variables
+let meteorsExpected = document.getElementById("nrMeteors");
+let attendees = document.getElementById("nrAttendees");
+
 // set original display properties of targeted elements
 window.onload = function () {
     summary.style.display = "none";
