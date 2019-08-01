@@ -11,12 +11,12 @@ a{
 
 }
 
-ul{
+nav>ul{
     list-style-type: none;
     background-color: skyblue;
 }
 
-li{
+nav li{
     display: inline-block;
     background-color: darkblue;
     width: 30%;
@@ -24,6 +24,10 @@ li{
     padding: 10px;
     color: white;
     font-size: 2rem;
+}
+
+section>ul{
+
 }
 
 li:hover{
@@ -36,11 +40,11 @@ li:hover{
 }
 
 #practical{
-    display: none;
+    /*display: none;*/
     background-color: lightgreen;
 }
 
 #contact{
-    display: none;
+    /*display: none;*/
     background-color: mediumpurple;
 }
