@@ -12,6 +12,11 @@ body{
 
 }
 
+p{
+    text-indent: 1em;
+    line-height: 1.3em;
+}
+
 img {
     width: 1000px;
     height: 300px;
@@ -102,25 +107,41 @@ nav li:hover{
     color: yellow;
 }
 
+
+/*CSS for the sections(common)*/
 section{
     width: 90vw;
     margin: Auto;
-    border-radius: 0 0 30px 30px;
+    border-radius: 30px;
     padding: 30px;
 }
 
 
-
+/*CSS for Summary*/
 #summary {
     display: block;
     background: lightblue;
 }
 
+
+/*CSS for Practical info*/
 #practical{
     /*display: none;*/
     background-color: lightgreen;
 }
 
+#practical li{
+    margin-bottom: 15px;
+    list-style-type: square;
+}
+
+.pi{
+    font-weight: bold;
+}
+
+
+
+/*CSS for Contact*/
 #contact{
     /*display: none;*/
     background-color: mediumpurple;
