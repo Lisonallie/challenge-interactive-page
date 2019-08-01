@@ -33,7 +33,7 @@ let submit = document.getElementById("button");
 let formItems = document.querySelectorAll("#fname, #lname, #email, #subject");
 
 // get number variables
-let meteorsExpected = document.getElementById("nrMeteors");
+let meteors = document.getElementById("nrMeteors");
 let attendees = document.getElementById("nrAttendees");
 
 // set original display properties of targeted elements
@@ -43,6 +43,7 @@ window.onload = function () {
     contact.style.display = "none";
     purpleSky.style.display = "block";
     submit.disabled == true;
+    increment();
 }
 
 // click events for each tab
@@ -121,3 +122,8 @@ for (let i = 0; i < formItems.length; i++) {
     submit.disabled == false;
 }
 
+// increase numbers upon page load
+function increment() {
+        meteors.value++ 
+        setTimeout('increment()',100); 
+}
