@@ -154,6 +154,16 @@ form{
 form > ul {
     list-style-type: none;
 }
+
+form li {
+    list-style-type: none;
+    margin: 10px 0;
+}µ
+ form li {
+     list-style-type: none;
+     margin: 10px 0;
+ }
+
 label{
     width: 80px;
 }
@@ -168,10 +178,12 @@ label{
     opacity: 0.9;
     display: inline-block;
     border-radius: 20px;
+    text-align:;
 }
 
 #button:hover{
     opacity:1;
+
 }
 
 
@@ -188,7 +200,9 @@ footer > section{
     float: left;
     background-color: lightgray;
     margin-right: 10px;
-    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    right: 10px;
 
 }
 
