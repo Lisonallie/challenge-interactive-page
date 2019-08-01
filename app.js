@@ -72,16 +72,26 @@ function showTab3() {
 previous.addEventListener("click", goBack);
 next.addEventListener("click", goForward);
 
+// go back in slider index
 function goBack() {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+    slideIndex--;
+    if (slideIndex == 0) {
+        slideIndex = 3;
+    }
 }
 
+// go forward in slider index
 function goForward() {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
+    slides[slideIndex].style.display = "block";
+    slideIndex++;
+    if (slideIndex == 3) {
+        slideIndex = 0;
+    }
 }
