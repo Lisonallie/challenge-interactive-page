@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Meetup - Meteor shower</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <header class="slideshow">
@@ -44,20 +43,29 @@
         </p>
     </section>
     <section id="practical">
-        <!--    place for practicaL-->
+        <!--    place for practical info-->
         <h2>Practical Info</h2>
         <ol>
-            <li>when : Saturday 3 August, 8PM to Sunday 4 August 1:30 AM 2019, <li>
-            <li>where</li>
-            <li>how</li>
+            <li>when : Saturday 3 August, 8PM to Sunday 4 August 1:30 AM 2019,
             <li>
-                Things to bring: A torch, preferably with a red filter (this can be bodged up from sweet wrappers). Something to sit/lay on- a reclined position will offer the best views and greatest comfort. Binoculars. A blanket. Hot drink(s)
+            <li>
+                Things to bring: A torch, preferably with a red filter (this can be bodged up from sweet wrappers).
+                Something to sit/lay on- a reclined position will offer the best views and greatest comfort. Binoculars.
+                A blanket. Hot drink(s)
             </li>
             <li>
-                What to wear: Warm clothes- layer up, it can get chilly late on. Sturdy footwear- while we'll arrive and get in position just before sunset, it will obviously be dark when we finish and difficult to see firm footholds. The round trip from car park to viewing site and back is about a mile
+                What to wear: Warm clothes- layer up, it can get chilly late on. Sturdy footwear- while we'll arrive and
+                get in position just before sunset, it will obviously be dark when we finish and difficult to see firm
+                footholds. The round trip from car park to viewing site and back is about a mile
             </li>
             <li>
-                How to find the car park: Head out of Haslemere on B2131, turn right up Haste Hill, follow onto Tennyson's Lane and head south-west until you come to the main car park. Turn right immediately after this car park, up an unsealed road, and there's a small car park on your right
+                How to find the car park: Head out of Haslemere on B2131, turn right up Haste Hill, follow onto
+                Tennyson's Lane and head south-west until you come to the main car park. Turn right immediately after
+                this car park, up an unsealed road, and there's a small car park on your right
+            </li>
+            <li>
+                where
+                <!--    place for google map-->
             </li>
         </ol>
     </section>
@@ -65,8 +73,30 @@
         <!--    place for Contact-->
         <h2>Contact</h2>
         <form action="@">
+            <ul>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </li>
+                <li>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                </li>
+            </ul>
 
-
+            <input type="submit" value="Submit">
         </form>
     </section>
 </main>
