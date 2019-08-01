@@ -21,12 +21,16 @@ function showTab1() {
         summary.style.display = "none";
     } else if (summary.style.display == "none") {
         summary.style.display = "block";
+        practical.style.display = "none";
+        contact.style.display = "none";
     }
 }
 
 function showTab2() {
     if (practical.style.display == "none") {
         practical.style.display = "block";
+        summary.style.display = "none";
+        contact.style.display = "none";
     } else if (practical.style.display == "block") {
         practical.style.display = "none";
     }
@@ -35,6 +39,8 @@ function showTab2() {
 function showTab3() {
     if (contact.style.display == "none") {
         contact.style.display = "block";
+        summary.style.display = "none";
+        practical.style.display = "none";
     } else if (contact.style.display == "block") {
         contact.style.display = "none";
     }
