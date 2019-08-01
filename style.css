@@ -22,17 +22,21 @@ li{
     font-size: 2rem;
 }
 
+li:hover{
+    cursor: pointer;
+}
+
 #summary {
     display: block;
-    background: orangered;
+    background: lightblue;
 }
 
 #practical{
     display: none;
-    background-color: yellow;
+    background-color: lightgreen;
 }
 
 #contact{
     display: none;
-    background-color: blue;
+    background-color: mediumpurple;
 }
