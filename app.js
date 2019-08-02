@@ -35,6 +35,7 @@ let formItems = document.querySelectorAll("#fname, #lname, #email, #subject");
 // get number variables
 let meteors = document.getElementById("nrMeteors");
 let attendees = document.getElementById("nrAttendees");
+meteorsNumber = "64000";
 
 // set original display properties of targeted elements
 window.onload = function () {
@@ -114,7 +115,7 @@ function goForward() {
 // disable send button if all fields are not filled in
 
 for (let i = 0; i < formItems.length; i++) {
-    formItems[i].addEventListener("input", function() {
+    formItems[i].addEventListener("input", function () {
         let values = [];
         formItems.forEach(v => values.push(v.value))
         submit.disabled = values.includes('');
@@ -124,6 +125,8 @@ for (let i = 0; i < formItems.length; i++) {
 
 // increase numbers upon page load
 function increment() {
-        meteors.value++ 
-        setTimeout('increment()',100); 
+    for (let i = 0; i <= meteorsNumber; i++) {
+        meteors.innerHTML = i;
+    }
 }
+setTimeout('increment()', 10000);
